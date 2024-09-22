@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 项目简介
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+本项目是一个简单的React应用，包含一个登录页面。用户可以通过输入服务器地址、端口、用户名和密码来进行登录。
 
-## Available Scripts
+## 文件结构
 
-In the project directory, you can run:
+- `src/App.js`：应用的主组件，负责渲染登录页面。
+- `src/index.js`：应用的入口文件，负责将主组件渲染到DOM中。
+- `src/pages/Login.js`：登录页面组件，包含表单和相关的状态管理逻辑。
 
-### `npm start`
+## 使用方法
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. 克隆项目到本地：
+    ```bash
+    git clone <项目地址>
+    cd <项目目录>
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. 安装依赖：
+    ```bash
+    npm install
+    ```
 
-### `npm test`
+3. 运行项目：
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. 打开浏览器并访问 `http://localhost:3000`，即可看到登录页面。
 
-### `npm run build`
+## 登录页面说明
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+登录页面包含以下字段：
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 服务器地址：输入服务器的地址。
+- 端口：输入服务器的端口号。
+- 用户名：输入登录的用户名。
+- 密码：输入登录的密码。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+用户可以填写以上字段并提交表单进行登录。
 
-### `npm run eject`
+## 重置表单
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+在登录页面中，用户可以通过点击重置按钮来清空表单内容并重置认证方法为默认值。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 其他
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+本项目使用了React框架进行开发，使用了函数组件和React Hooks来管理状态和生命周期。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+如有任何问题或建议，请联系项目维护者。
