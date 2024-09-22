@@ -12,8 +12,8 @@
 
 1. 克隆项目到本地：
     ```bash
-    git clone <项目地址>
-    cd <项目目录>
+    git clone https://github.com/sscaifesu/pviwer.git
+    cd pviwer
     ```
 
 2. 安装依赖：
