@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 function Login() {
-    const [authMethod, setAuthMethod] = useState('linux-pam');
+    const [authMethod, setAuthMethod] = useState<string>('linux-pam');
     const [formData, setFormData] = useState({
         serverAddress: '',
         port: '',
@@ -9,7 +9,7 @@ function Login() {
         password: ''
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
